@@ -1,0 +1,177 @@
+.product-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* .product-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.product-container button:hover {
+  background-color: #0056b3;
+} */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.product-description {
+  color: #666;
+}
+
+.product-price {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.product-actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-actions .edit-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+.product-actions .edit-button:hover {
+  background-color: #e0a800;
+}
+
+.product-actions .delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.product-actions .delete-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 1024px) {
+  .table th,
+  .table td {
+    padding: 10px;
+  }
+
+  .product-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .product-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-actions button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .product-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table,
+  .table th,
+  .table td {
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+
+  .table th {
+    display: none;
+  }
+
+  .table td {
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: calc(50% - 20px);
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  .product-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .product-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-actions button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .product-image {
+    width: 80px;
+    height: 80px;
+  }
+}
